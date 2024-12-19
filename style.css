@@ -1,0 +1,149 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #000; /* Set text color to black */
+}
+
+/* Resume container styling */
+#resume {
+    max-width: 1200px;
+    margin: 10px auto;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Header section */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: #000; /* Set header text color to black */
+}
+
+header p a {
+    margin-right: 10px;
+    color: #007BFF; /* Links will be blue */
+}
+
+header i {
+    margin-right: 5px;
+}
+
+/* Container for left and right panels */
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Left Panel */
+aside {
+    width: 30%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Right Panel */
+main {
+    width: 70%;
+}
+
+/* Section titles (h2) */
+h2 {
+    font-size: 1.5em;
+    color: #000; /* Set section headers to black */
+    margin-top: 20px;
+    border-bottom: 2px solid #000; /* Set border to black */
+    padding-bottom: 5px;
+}
+
+/* Skills section */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background: #000006;
+    color: #fbf8f8;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+/* List styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    color: #000; /* Set list item text color to black */
+}
+
+/* Anchor link styling */
+a {
+    color: #007BFF; /* Links will be blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Paragraph styling */
+p {
+    margin: 10px 0;
+    color: #000; /* Set paragraph text color to black */
+}
+
+/* Button styling */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Page size setup for PDF (A4) */
+@page {
+    size: A3;
+    margin: 20mm; /* Adjust margins for better scaling */
+}
+
+/* Ensure proper scaling on small screens or large text content */
+@media print {
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    #resume {
+        page-break-before: always; /* Ensure it breaks on a new page when printing */
+    }
+
+    /* Control large content */
+    #resume {
+        max-width: 100%;
+    }
+}
