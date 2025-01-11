@@ -103,7 +103,3 @@ Percentage: 92%
 - **Location**: Kottayam, Kerala, India
 
 ---
-
-## License
-
-This repository is licensed under the [MIT License](LICENSE).
