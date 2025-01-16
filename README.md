@@ -7,10 +7,11 @@ Welcome to my professional resume repository! This repository showcases my resum
 1. [About Me](#about-me)
 2. [Skills](#skills)
 3. [Education](#education)
-4. [Certifications](#certifications)
-5. [Projects](#projects)
-6. [Volunteering](#volunteering)
-7. [Contact Information](#contact-information)
+4. Work Experience(#work-experience)
+5. [Certifications](#certifications)
+6. [Projects](#projects)
+7. [Volunteering](#volunteering)
+8. [Contact Information](#contact-information)
 
 ---
 
@@ -35,63 +36,6 @@ I am a passionate **Cybersecurity student** specializing in **Ethical Hacking**,
 - **Database Management**: MySQL, MongoDB
 - **Version Control**: Git, GitHub
 - **Operating Systems**: Windows, Linux
-
----
-
-## Education
-
-### **Bachelor of Technology in Cybersecurity**  
-**Indian Institute of Information Technology Kottayam**  
-11/2022 - 05/2026  
-CGPA: 8.6
-
-### **CBSE-XII**  
-**Jaipuria Vidyalaya**  
-04/2020  
-Percentage: 92%
-
----
-
-## Certifications
-
-- **Introduction to Cybersecurity**  
-  Issued by Cisco  
-  A student-level credential demonstrating introductory knowledge in cybersecurity, including the implications of cyber threats, vulnerabilities, threat detection, and defense.
-
-- **Certificate of Continuing Education Completion**  
-  Issued by Cybrary  
-  Successfully completed 2 CEUs/CPEs and a 2-hour training course on **Developing Ethical Hacking Tools with Python**.
-
-- **Certified Ethical Hacker (CEHv12)**  
-  Currently undergoing training for the **CEHv12 Professional Series**.
-
----
-
-## Projects
-
-### **Reflected-XSS-Filteration**
-   - **Description**: Developed a solution to mitigate reflected XSS vulnerabilities by crafting and analyzing targeted payloads. Enhanced filtration mechanisms to secure web applications from client-side attacks.
-   - **Tech Stack**: Python (BeautifulSoup, Requests, Responses), JavaScript, HTML
-   - [GitHub Link](https://github.com/idPriyanshu/Reflected-XSS-Filtration)
-
-### **CaféFlow+**
-   - **Description**: Implemented secure software development techniques in a café management software system, focusing on safeguarding food ordering processes, ensuring secure handling of sensitive data, and preventing unauthorized access.
-   - **Tech Stack**: Flutter (Dart), NodeJS with ExpressJS, RESTful API, MongoDB
-   - [GitHub Frontend Link](https://github.com/idPriyanshu/cafeflow)
-   - [GitHub Backend Link](https://github.com/idPriyanshu/cafeflow-backend-OS)
-
----
-
-## Volunteering
-
-- **Member of Coding Club**  
-  Organized and participated in various coding contests.
-
-- **Member of Sports Club**  
-  Organized and participated in Pradhva-2022, 2023, 2024.
-
-- **Inter IIIT Sports Meet**  
-  Represented college in badminton and cricket at the Inter IIIT Meet at IIIT Allahabad (March 9th - March 15th) and IIIT Kanchipuram (March 9th - March 15th).
 
 ---
 
