@@ -7,7 +7,7 @@ Welcome to my professional resume repository! This repository showcases my resum
 1. [About Me](#about-me)
 2. [Skills](#skills)
 3. [Education](#education)
-4. Work Experience(#work-experience)
+4. [Work Experience](#work-experience)
 5. [Certifications](#certifications)
 6. [Projects](#projects)
 7. [Volunteering](#volunteering)
