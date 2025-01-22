@@ -12,7 +12,7 @@ document.getElementById("download-btn").addEventListener("click", function () {
     pdf.html(resume, {
         callback: function (doc) {
             // Save the generated PDF
-            doc.save('Priyanshu-Singh-Resume.pdf');
+            pdf.save('Priyanshu-Singh-Resume.pdf');
         },
         x: 10, // Adjust the X position of the content in the PDF
         y: 10, // Adjust the Y position of the content in the PDF
