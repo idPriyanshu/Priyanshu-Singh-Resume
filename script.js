@@ -1,26 +1,19 @@
 document.getElementById("download-btn").addEventListener("click", function () {
     const resume = document.getElementById("resume");
 
-    // Initialize jsPDF with desired options
-    const pdf = new jsPDF({
-        unit: 'mm',
-        format: 'a3',
-        orientation: 'portrait',
-    });
-
-    // Use the html method to convert HTML to PDF
-    pdf.html(resume, {
-        callback: function (doc) {
-            // Save the generated PDF
-            pdf.save('Priyanshu-Singh-Resume.pdf');
-        },
-        x: 10, // Adjust the X position of the content in the PDF
-        y: 10, // Adjust the Y position of the content in the PDF
+    // Set options for html2pdf
+    const options = {
+        margin: [9, 9], // Adjust top, left, bottom, right margins
+        filename: 'Priyanshu-Singh-Resume.pdf',
+        image: { type: 'jpeg', quality: 3 }, // Higher quality image
         html2canvas: {
-            scale: 1.5, // Adjust scale for better resolution
-            letterRendering: true, // Helps render text more clearly
+            scale: 3.5, // Increase scale for better resolution (you can try scale: 3 or scale: 1.5 for different results)
+            letterRendering: true, // Helps to render text more clearly
+            useCORS: true // If your content includes images, set this to allow cross-origin content to be captured
         },
-        autoPaging: true, // Automatically adds new pages if the content overflows
-        margin: [9, 9], // Set margins for the content in the PDF
-    });
+        jsPDF: { unit: 'mm', format: 'a3', orientation: 'portrait' }
+    };
+
+    // Generate the PDF with the options set
+    html2pdf().from(resume).set(options).save();
 });
