@@ -1,19 +1,18 @@
 document.getElementById("download-btn").addEventListener("click", function () {
-    const resume = document.getElementById("resume");
+    const resume = document.getElementById("resume").innerText; // Extract text content from the resume element
 
-    // Set options for html2pdf
-    const options = {
-        margin: [9, 9], // Adjust top, left, bottom, right margins
-        filename: 'Priyanshu-Singh-Resume.pdf',
-        image: { type: 'jpeg', quality: 3 }, // Higher quality image
-        html2canvas: {
-            scale: 3.5, // Increase scale for better resolution (you can try scale: 3 or scale: 1.5 for different results)
-            letterRendering: true, // Helps to render text more clearly
-            useCORS: true // If your content includes images, set this to allow cross-origin content to be captured
-        },
-        jsPDF: { unit: 'mm', format: 'a3', orientation: 'portrait' }
-    };
+    // Create a Blob object with the text content
+    const blob = new Blob([resume], { type: "text/plain" });
+    const filename = "Priyanshu-Singh-Resume.txt";
 
-    // Generate the PDF with the options set
-    html2pdf().from(resume).set(options).save();
+    // Create a link element to download the file
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = filename;
+
+    // Programmatically click the link to trigger the download
+    link.click();
+
+    // Clean up the URL object
+    URL.revokeObjectURL(link.href);
 });
